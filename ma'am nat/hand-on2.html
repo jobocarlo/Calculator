@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Link Example</title>
+  </head>
+  <body>
+    <a href="https://www.youtube.com/" id="linkToExample">click me!</a>
+
+    <script>
+      const linkToExample = document.getElementById("linkToExample");
+
+      linkToExample.addEventListener("click", (event) => {
+        event.preventDefault();
+        console.log("Link clicked, but prevented from loading new page.");
+      });
+    </script>
+  </body>
+</html>

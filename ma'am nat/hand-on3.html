@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <button id="btnViewImage">VIEW</button>
+    <button id="btnHideImage">HIDE</button>
+    <img id="img" src="" alt="" style="display: none;">
+
+    <script>
+      const btnViewImage = document.getElementById("btnViewImage");
+      const btnHideImage = document.getElementById("btnHideImage");
+      const imgExample = document.getElementById("img");
+
+      btnViewImage.addEventListener("click", () => {
+        img.src = "image.png";
+        img.style.display = "block";
+      });
+
+      btnHideImage.addEventListener("click", () => {
+        img.style.display = "none";
+      });
+
+      img.addEventListener("click", () => {
+        img.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

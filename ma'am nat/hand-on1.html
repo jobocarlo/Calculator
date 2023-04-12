@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <button id="btnGreeting">Click me</button>
+    <p id="greetingParagraph"></p>
+    <script>
+        let btnGreeting = document.getElementById(`btnGreeting`);
+        let prgGreeting = document.getElementById(`prgGreeting`);
+  
+        btnGreeting.addEventListener("click", sayGreeting);
+  
+        function sayGreeting() {
+          greetingParagraph.innerHTML = `Hello!`;
+        }
+      </script>
+  </body>
+</html>
